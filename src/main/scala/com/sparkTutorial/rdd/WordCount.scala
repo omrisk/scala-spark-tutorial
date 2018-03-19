@@ -18,5 +18,11 @@ object WordCount {
 
     val wordCounts = words.countByValue()
     for ((word, count) <- wordCounts) println(word + " : " + count)
+
+    val maxOccurrence = wordCounts.maxBy(_._2)
+
+    println(maxOccurrence)
+    val minOccurrence = wordCounts.minBy(_._2)
+    println(minOccurrence)
   }
 }

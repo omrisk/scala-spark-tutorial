@@ -1,5 +1,7 @@
 package com.sparkTutorial.rdd.airports
 
+import org.apache.spark.{SparkConf, SparkContext}
+
 object AirportsByLatitudeProblem {
 
   def main(args: Array[String]) {
@@ -16,5 +18,13 @@ object AirportsByLatitudeProblem {
        "Tofino", 49.082222
        ...
      */
+    val conf = new SparkConf().setAppName("airport_longitude").setMaster("local[2]")
+    val sc = new SparkContext(conf)
+
+
+
+
+
+
   }
 }
